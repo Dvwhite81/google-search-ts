@@ -5,7 +5,6 @@ import SearchBar from "../Search/SearchBar";
 
 function ImageSearch() {
   const url = 'https://www.google.com/search?tbm=isch&q=';
-  console.log('image url:', url);
 return (
     <div id="image-page" className='page'>
     <NavBar />

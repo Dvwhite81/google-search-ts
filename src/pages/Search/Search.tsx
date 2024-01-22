@@ -6,7 +6,6 @@ import NavBar from '../NavBar';
 
 function Search() {
   const url = 'https://www.google.com/search';
-  console.log('search url:', url);
   return (
     <div id="search-page" className='page'>
       <NavBar />

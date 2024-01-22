@@ -113,3 +113,52 @@ nav {
   border: 1px solid #dadce0;
   color: #202124;
 }
+
+#advanced-page form {
+  display: grid;
+}
+
+#advanced-label-div {
+  margin: 2rem 0 1rem;
+}
+
+#advanced-label {
+  color: #d93025;
+  font-size: 20px;
+  margin: 25px 35px;
+}
+
+#advanced-search {
+  margin: 2rem auto;
+  width: 70%;
+}
+
+#advanced-form-title {
+  margin-bottom: 1rem;
+}
+
+.advanced-div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.advanced-form-label {
+  align-self: center;
+  font-size: 14px;
+}
+
+.advanced-div input {
+  font-size: 18px;
+  width: 60%;
+}
+
+#advanced-submit {
+  background-color: #4d90fe;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  justify-self: end;
+  width: fit-content;
+}

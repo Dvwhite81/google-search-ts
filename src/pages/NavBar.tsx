@@ -14,11 +14,10 @@ function NavBar() {
           <li className='nav-item'>
             <Link className='nav-link' to ='/advanced'>Advanced</Link>
           </li>
-          <li className='nav-item'>
-            <img id='apps-icon' className='nav-icon' src={AppsIcon} alt='apps icon' />
-          </li>
-          <li className='nav-item'>
+        <li className='nav-item'>
+          <Link className='nav-link' to='/'>
             <img className='nav-icon' src={ProfileIcon} alt='profile icon' />
+          </Link>
           </li>
         </ul>
       </nav>
