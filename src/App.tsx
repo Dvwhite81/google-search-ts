@@ -3,10 +3,8 @@ import AdvancedSearch from './pages/AdvancedSearch/AdvancedSearch';
 import ImageSearch from './pages/ImageSearch/ImageSearch';
 import Search from './pages/Search/Search';
 import './App.css';
-import { useState } from 'react';
 
 function App() {
-  const [url, setUrl] = useState('https://www.google.com/search');
   return (
     <>
       <BrowserRouter>
