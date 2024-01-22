@@ -1,17 +1,21 @@
-import Logo2 from './assets/images/Logo-Circle.png';
-import Logo from '/Logo-Circle.png';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import AdvancedSearch from './pages/AdvancedSearch/AdvancedSearch';
+import ImageSearch from './pages/ImageSearch/ImageSearch';
+import Search from './pages/Search/Search';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+  const [url, setUrl] = useState('https://www.google.com/search');
   return (
     <>
-      <h1>Hello</h1>
-      <a href="https://vitejs.dev" target="_blank">
-        <img src={Logo} className="logo" alt="Vite logo" />
-      </a>
-      <a href="https://react.dev" target="_blank">
-        <img src={Logo2} className="logo react" alt="React logo" />
-      </a>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Search />} />
+          <Route path='/images' element={<ImageSearch />} />
+          <Route path='/advanced' element={<AdvancedSearch />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

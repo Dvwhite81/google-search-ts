@@ -1,33 +1,115 @@
-#root {
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+  --gray-color: #9aa0a6;
+  --light-gray-color: #f2f2f2;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+nav {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.nav-list {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  list-style-type: none;
+  padding: 0.5rem;
+}
+
+.left,
+.right {
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+
+.right {
+  justify-content: end;
+}
+
+.nav-item {
+  color: #202124;
+  cursor: pointer;
+  height: 14px;
+  margin: 0 5px;
+  padding: 5px;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+.nav-link {
+  color: initial;
+  text-decoration: none;
+}
+
+.nav-icon {
+  height: 4vh;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  height: 5.8rem;
+  margin: .5rem auto;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#main-search-bar {
+  align-items: center;
+  border: 1px solid var(--light-gray-color);
+  border-radius: 1rem;
+  display: flex;
+  height: 2.5rem;
+  margin: 1rem auto;
+  width: 90vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.search-bar-icon {
+  cursor: pointer;
+  height: 50%;
+  padding: .8rem;
+}
+
+#main-search-bar-input {
+  border: none;
+  height: 100%;
+  width: 80%;
+}
+
+:focus-visible {
+  outline: none;
+}
+
+#search-buttons {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.btn {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  cursor: pointer;
+  font-family: Roboto,arial,sans-serif;
+  font-size: 14px;
+  height: 36px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.btn:hover {
+  box-shadow: 0 1px 1px rgba(0,0,0,.1);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
 }
